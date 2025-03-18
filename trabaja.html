@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>                                                                                      <!--Información básica de la página. Hago link a la hoja de estilo-->
+    <title>En clave musical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Tienda de Música" content="Venta de instrumentos musicales y accesorios y sevicios de afinación y reparación de instrumentos">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienesSomos.html">¿Quiénes somos?</a></li>
+                <li><a href="productosServicios.html">Productos y Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="trabaja"><a href="trabaja.html">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Trabaja con nosotros</h1>
+            <span>¿Piensas que puedes aportar a nuestro equipo?<br>
+                ¡Mándanos tu solicitud!</span>
+        </div>
+        <form id="formulariotrabaja">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <table>
+                    <tr>
+                        <td><label for="nombretrabaja">Nombre:</label></td>
+                        <td><input id="nombretrabaja" type="text" maxlength="40" required></td>
+                        <td><label for="apellidostrabaja">Apellidos:</label></td>
+                        <td><input id="apellidostrabaja" type="text" maxlength="50" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dnitrabaja">DNI:</label></td>
+                        <td><input id="dnitrabaja" type="text" pattern="^\d{8}[A-Za-z]$" maxlength="9" required></td>
+                        <td><label for="sexotrabaja">Sexo:</label></td>
+                        <td><select id="sexotrabaja" name="sexo" required>
+                            <option value="" disabled selected hidden>Sexo</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Otro</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="trabajonacimiento">Fecha de nacimiento:</label></td>
+                        <td><input id="trabajonacimiento" type="date" required ></td>
+                        <td><label for="trabajociudad">Ciudad:</label></td>
+                        <td><input id="trabajociudad" type="text" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="trabajonacionalidad">Nacionalidad:</label></td>
+                        <td><input id="trabajonacionalidad" type="text" required></td>
+                        <td><label for="trabajocp">Código Postal:</label></td>
+                        <td><input id="trabajocp" required pattern="^\d{5}$"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="trabajotelefono">Teléfono:</label></td>
+                        <td><input id="trabajotelefono" required pattern="`\d{9}"></td>
+                        <td><label for="trabajomail">E-mail:</label></td>
+                        <td><input id="trabajomail" type="email" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Formación</legend>
+                <p>En caso de no tener ninguna titulación dejar en blanco.</p>
+                <table>
+                    <tr>
+                        <td><label for="trabajotitulo1">Títulación:</label></td>
+                        <td><input id="trabajotitulo1" type="text"></td>
+                        <td><label for="trabajofechainicio1">Fecha inicio:</label></td>
+                        <td><input id="trabajofechainicio1" type="number" min="1950" max="2025"></td>         
+                        <td><label for="trabajofechafinal1">Fecha final:</label></td>
+                        <td><input id="trabajofechafinal1" type="number" min="1950" max="2025"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Idiomas</legend> 
+                <table>
+                    <tr>
+                        <td><label for="trabajaidioma1">Idioma 1:</label></td>
+                        <td><input id="trabajaidioma1" type="text" maxlength="20"></td>
+                        <td><label for="trabajaidiomahablado1">Nivel hablado:</label></td>
+                        <td><select id="trabajaidiomahablado1">
+                                <option value="excelente">Excelente:</option>
+                                <option value="bien">Bien:</option>
+                                <option value="regular">Regular:</option>
+                                <option value="nada">Nada:</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaleido1">Nivel leído:</label></td>
+                        <td><select id="trabajaidiomaleido1">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaescrito1">Nivel escrito:</label></td>
+                        <td><select id="trabajaidiomaescrito1">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="trabajaidioma2">Idioma 2:</label></td>
+                        <td><input id="trabajaidioma2" type="text" maxlength="20"></td>
+                        <td><label for="trabajaidiomahablado2">Nivel hablado:</label></td>
+                        <td><select id="trabajaidiomahablado2">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaleido2">Nivel leído:</label></td>
+                        <td><select id="trabajaidiomaleido2">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaescrito2">Nivel escrito:</label></td>
+                        <td><select id="trabajaidiomaescrito2">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="trabajaidioma3">Idioma 3:</label></td>
+                        <td><input id="trabajaidioma3" type="text" maxlength="20"></td>
+                        <td><label for="trabajaidiomahablado3">Nivel hablado:</label></td>
+                        <td><select id="trabajaidiomahablado3">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaleido3">Nivel leído:</label></td>
+                        <td><select id="trabajaidiomaleido3">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                        <td><label for="trabajaidiomaescrito3">Nivel escrito:</label></td>
+                        <td><select id="trabajaidiomaescrito3">
+                                <option value="excelente">Excelente</option>
+                                <option value="bien">Bien</option>
+                                <option value="regular">Regular</option>
+                                <option value="nada">Nada</option>
+                        </select></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <tr>
+                <td colspan="2"><button id="cfenviartrabaja">Enviar</button></td>
+            </tr>
+        </form>
+    </main>
+    <footer>
+        <p>También puedes visitarnos en:</p><br>
+        <table>
+            <tr>
+                <td><a href="https://www.instagram.com/enclavemusical">Instagram</a></td>
+                <td><img src="instagramlogo.png" width="20" alt="logo instagram"></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/enclavemusical">Youtube</a></td>
+                <td><img src="youtubelogo.png" width="60" alt="logo youtube"></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

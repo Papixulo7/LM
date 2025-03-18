@@ -1,0 +1,109 @@
+body{
+    font-family:Arial, Helvetica, sans-serif; /* letra del cuerpo del documento*/
+    font-size:20px;
+}
+form{    /* meto un formulario con borde, espaciado interno y un margen de 20px (diferencia con lo exterior)*/
+    border:2px solid chocolate;
+    padding:20px;
+    width:60%;
+    margin: 20px;
+    border-radius: 10px;
+    background-color:#232F3E;
+    color:beige
+}
+#formulariocontacto{
+    width:400px;
+}
+header{                 /* imagen de fondo azul con letras en blanco rodeado*/
+    position:sticky;
+    top:0;
+    width:100%;
+    border:2px solid chocolate;
+    padding:20px;
+    background-color:#232F3E;
+    color:beige;
+}
+#menu{          /*ul del nav, se pone la lista en horizontal y se quitan los puntitos de la ul*/
+    display:flex;
+    justify-content:center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+#menu li{                       /*se le pone una separación a la derecha de color chocolate, y se le quita el subrayado*/
+    display:flex;
+    align-items: center;
+    padding:20px 0;
+    border-right:2px solid chocolate;
+}
+#menu li a{                     /*se le quita el subrayado al nav*/
+    text-decoration: none;
+    padding: 0 10px;
+}
+#menu li:last-child{            /*se le quita la barra derecha al último elemento*/
+    border-right: none;
+}
+footer{                         /*Se crea un espacio como el del header pero estático para añadir redes sociales. Se le añade un padding para que no se acerque tanto a los bordes el texto*/
+    position:static;
+    bottom:0;
+    width:100%;
+    border:2px solid chocolate;
+    padding:20px;
+    background-color:#232F3E;
+    color:beige;
+    padding: 20px;
+}
+footer table tr{
+    text-align: justify;
+}
+main{                       /*Se le añade un padding al main para separarlo de los laterales de la página.*/
+    padding:20px;
+    margin:10px;
+    text-align: justify;
+}
+footer a{                       /* Se quitan los subrayados de enlace*/
+    text-decoration-line: none ;
+}
+#inicio{                    /*Se le añade id inicio a la página principal y se le pone align center para que esté centrado*/
+    text-align: center;
+}
+a{                          /*Pongo todos los enlaces por defecto en beige, lo separo por si en algún momento quiero cambiar toda la página*/
+    color:beige;
+}
+#equipo{
+    border-spacing:10px;
+}
+.tablaproductos{
+    border:2px solid chocolate;
+    border-radius:10px;
+    padding:20px;
+    color:beige;
+    background-color: #232F3E;
+    margin-top:20px;
+    width:100% ;
+    text-align: center;
+}
+.tablaproductos tr th{              /*Se le pone un borde y un padding a las celdas para separarlas*/
+    border:1px solid chocolate;
+    padding:8px;
+    margin:5px;
+}
+.tablaproductos tr td{              /* Se separan las celdas para mejorar la legibilidad*/
+    padding:8px;
+    border:1px solid chocolate;
+    color:black;
+    background-color: white;
+}
+input{                              /*Pongo los elementos de los formularios con el mismo margen*/
+    margin:0 10px;
+}
+textarea{
+    margin: 0 10px;
+}
+select{
+    margin: 0 10px;
+}
+fieldset table tr td{
+    padding:2px;
+    margin:8px;
+}

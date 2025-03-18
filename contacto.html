@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>                                                                                      <!--Información básica de la página. Hago link a la hoja de estilo-->
+    <title>En clave musical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Tienda de Música" content="Venta de instrumentos musicales y accesorios y sevicios de afinación y reparación de instrumentos">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienesSomos.html">¿Quiénes somos?</a></li>
+                <li><a href="productosServicios.html">Productos y Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="trabaja"><a href="trabaja.html">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <p>Para contactar con nosotros puede hacerlo a través de los siguientes medios.</p>
+        <br>
+        <ul>
+            <li>E-mail: enclavemusical@gmail.com</li>
+            <li>Teléfono: +34 666 666 666</li>
+            <li>Dirección: Avenida de la tienda de música S/N</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d627.8710756433051!2d1.9063582449801377!3d27.100384412832444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x120e7f81eab5e51b%3A0x3a3dea883af3b333!2z2YXYsdi0ICjYr9it2KkpIC0gU2hvd2Vy!5e0!3m2!1ses!2ses!4v1739127177496!5m2!1ses!2ses" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Si desea una atención más personalizada puede recibir atención a través del siguiente formulario:</p>
+
+        <form id="formulariocontacto">
+            <table>
+                <tr>
+                    <th colspan="2">Formulario de contacto</th>
+                </tr>
+                <tr>
+                    <td><label for="cfnombrecontacto">Nombre y Apellidos: </label></td>
+                    <td><input id="cfnombrecontacto" type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cfnumerocontacto">Número de teléfono:</label></td>
+                    <td><input id="cfnumerocontacto" type="tel" pattern="^[0-9]{9}$"></td>
+                </tr>
+                <tr>
+                    <td><label for="cfemailcontacto">E-mail:</label></td>
+                    <td><input id="cfemailcontacto" type="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cfconsultacontacto">Escriba su consulta:</label></td>
+                    <td><textarea id="cfconsultacontacto" placeholder="Escriba aquí su consulta" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="cfenviarcontacto">Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <p>También puedes visitarnos en:</p><br>
+        <table>
+            <tr>
+                <td><a href="https://www.instagram.com/enclavemusical">Instagram</a></td>
+                <td><img src="instagramlogo.png" width="20" alt="logo instagram"></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/enclavemusical">Youtube</a></td>
+                <td><img src="youtubelogo.png" width="60" alt="logo youtube"></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
